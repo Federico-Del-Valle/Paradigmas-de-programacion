@@ -55,7 +55,7 @@ abstract class Criatura implements Comparable<Criatura>{
 
     @Override
     public int compareTo(Criatura c){
-        return Integer.compare(c.peligrosidad, this.peligrosidad);
+        return  c.getPeligrosidad() -this.peligrosidad ;
     }
 
     @Override
